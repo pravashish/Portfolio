@@ -13,7 +13,7 @@ const PORTFOLIO = {
     "email": "pravashish8@gmail.com",
     "github": "https://github.com/pravashish",
     "medium": "https://medium.com/@pravashish2036",
-    "website": "https://mailto:pravashish8@gmail.com"
+    "website": ""
   },
   "about": {
     "bio": [

@@ -116,11 +116,11 @@
 <nav>
   <div class="nav-inner">
     <span class="logo" id="nav-logo"></span>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
+      <li id="nav-skills"><a href="#skills">Skills</a></li>
+      <li id="nav-projects"><a href="#projects">Projects</a></li>
+      <li id="nav-experience"><a href="#experience">Experience</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -132,7 +132,7 @@
     <h1 class="hero-name" id="hero-name"></h1>
     <p class="hero-sub" id="hero-tagline"></p>
     <div class="btn-group">
-      <a class="btn btn-primary" href="#projects">View Projects</a>
+      <a class="btn btn-primary" id="hero-cta" href="#projects">View Projects</a>
       <a class="btn btn-outline" href="#contact">Contact Me</a>
     </div>
     <div class="hero-socials" id="hero-socials"></div>
@@ -210,7 +210,6 @@
     leetcode: { label: 'LeetCode', icon: '💻',  contact: false },
     twitter:  { label: 'Twitter',  icon: '𝕏',   contact: false },
     kaggle:   { label: 'Kaggle',   icon: '📊',  contact: false },
-    //website:  { label: 'Website',  icon: '🌐',  contact: false },
     location: { label: 'Location', icon: '📍',  contact: true  },
   };
 
@@ -313,6 +312,26 @@
   // Footer
   document.getElementById('footer').textContent =
     `© ${new Date().getFullYear()} ${d.name} · ${d.title}`;
+
+  // Hide sections + nav links that have no data
+  function hideSection(id) {
+    const sec = document.getElementById(id);
+    if (sec) sec.style.display = 'none';
+    const nav = document.getElementById('nav-' + id);
+    if (nav) nav.style.display = 'none';
+  }
+
+  if (!d.skills    || d.skills.length    === 0) hideSection('skills');
+  if (!d.projects  || d.projects.length  === 0) {
+    hideSection('projects');
+    // Redirect hero CTA to experience or contact instead
+    const cta = document.getElementById('hero-cta');
+    if (cta) {
+      cta.href        = d.experience && d.experience.length ? '#experience' : '#contact';
+      cta.textContent = d.experience && d.experience.length ? 'View Experience' : 'Contact Me';
+    }
+  }
+  if (!d.experience || d.experience.length === 0) hideSection('experience');
 </script>
 </body>
 </html>

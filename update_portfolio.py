@@ -157,6 +157,12 @@ def classify_links(raw_links, text):
         url = url.strip().rstrip("/")
         if not url:
             continue
+        # Skip mailto: links — they are emails, not website URLs
+        if url.startswith("mailto:") or "mailto:" in url:
+            email_part = re.search(r"[\w.+\-]+@[\w\-]+\.[\w.]+", url)
+            if email_part and not socials["email"]:
+                socials["email"] = email_part.group()
+            continue
         matched = False
         for slot, pattern in LINK_PATTERNS[:-1]:  # skip catch-all
             if pattern and re.search(pattern, url, re.I):

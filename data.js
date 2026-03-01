@@ -12,8 +12,7 @@ const PORTFOLIO = {
   "socials": {
     "email": "pravashish8@gmail.com",
     "github": "https://github.com/pravashish",
-    "medium": "https://medium.com/@pravashish2036",
-    "website": ""
+    "medium": "https://medium.com/@pravashish2036"
   },
   "about": {
     "bio": [

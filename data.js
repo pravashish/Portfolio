@@ -6,7 +6,7 @@
 
 const PORTFOLIO = {
   "name": "PRAVASHISH MANDIRAM",
-  "title": "Senior Data Engineer",
+  "title": "Data Engineer",
   "tagline": "I'm a Senior Data Engineer passionate about building scalable data systems and turning raw data into business value.",
   "location": "Dallas, TX",
   "socials": {

@@ -7,7 +7,7 @@
 const PORTFOLIO = {
   "name": "PRAVASHISH MANDIRAM",
   "title": "Data Engineer",
-  "tagline": "I'm a Senior Data Engineer passionate about building scalable data systems and turning raw data into business value.",
+  "tagline": "I'm a Data Engineer passionate about building scalable data systems and turning raw data into business value.",
   "location": "Dallas, TX",
   "socials": {
     "email": "pravashish8@gmail.com",
@@ -16,7 +16,7 @@ const PORTFOLIO = {
   },
   "about": {
     "bio": [
-      "Senior Data Engineer with 5+ years of experience designing and operating high-throughput, cloud-native data platforms at\nscale. Deep expertise in real-time streaming pipelines (Kafka, Spark Structured Streaming, Flink), large-scale batch\nETL/ELT, and distributed systems on AWS and Azure. Proven record of building production-grade data infrastructure\nsupporting billions of events daily, reducing pipeline latency from hours to seconds, and enabling AI/ML-powered analytics\nincluding anomaly detection and RAG-based natural language querying. Strong hands-on experience with Kubernetes,\nDocker, Python, Java, and SQL. Collaborative team player with a track record of partnering across data science, product,\nand engineering teams to deliver actionable insights."
+      "Data Engineer with 5+ years of experience designing and operating high-throughput, cloud-native data platforms at scale.\nDeep expertise in real-time streaming pipelines (Kafka, Spark Structured Streaming, Flink), large-scale batch ETL/ELT,\nand distributed systems on AWS and Azure. Proven record of building production-grade data infrastructure supporting\nbillions of events daily, reducing pipeline latency from hours to seconds, and enabling AI/ML-powered analytics including\nanomaly detection and RAG-based natural language querying. Strong hands-on experience with Kubernetes, Docker,\nPython, Java, and SQL. Collaborative team player with a track record of partnering across data science, product, and\nengineering teams to deliver actionable insights."
     ],
     "highlights": [
       {
@@ -42,10 +42,8 @@ const PORTFOLIO = {
       "tags": [
         "Apache Kafka",
         "Apache Flink",
-        "Spark Structured Streaming",
         "PySpark",
-        "Kinesis",
-        "Spark SQL"
+        "Kinesis"
       ]
     },
     {
@@ -63,11 +61,8 @@ const PORTFOLIO = {
       "tags": [
         "Snowflake",
         "Amazon Redshift",
-        "Google BigQuery",
         "Azure Synapse",
-        "Trino / Presto",
-        "Dimensional",
-        "Modeling",
+        "Dimensional Modeling",
         "Data Vault 2.0"
       ]
     },
@@ -92,12 +87,9 @@ const PORTFOLIO = {
       "tags": [
         "Apache Airflow",
         "Docker",
-        "Kubernetes (K8s)",
-        "Terraform",
         "CloudFormation",
         "CI/CD",
-        "GitHub",
-        "Actions"
+        "GitHub Actions"
       ]
     },
     {
@@ -132,16 +124,14 @@ const PORTFOLIO = {
         "Tableau",
         "Power BI",
         "Looker",
-        "CloudWatch",
-        "Grafana",
-        "Operational Dashboards"
+        "CloudWatch"
       ]
     }
   ],
   "projects": [],
   "experience": [
     {
-      "role": "Senior Data Engineer / Analytics Engineer",
+      "role": "Data Engineer / Analytics Engineer",
       "company": "Brooklyn Data(Velir)",
       "period": "Jan 2026 – Present",
       "bullets": [
